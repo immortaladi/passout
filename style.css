@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #ffffff;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #3a6186, #89253e);
+  padding: 10px 20px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.school-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+}
+
+.header-btn {
+  background: #f39c12;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.header-btn:hover {
+  background: #e67e22;
+}
+
+.notice-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.notice-box {
+  width: 60%;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+#notice-text {
+  position: absolute;
+  width: 100%;
+  animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.notice-box:hover #notice-text {
+  animation-play-state: paused;
+}

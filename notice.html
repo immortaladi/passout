@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOTICE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="logo.png" alt="School Logo" class="school-logo">
+      <h1>GYANODAY VIDYALAYA</h1>
+    </div>
+    <div class="header-right">
+      <button class="header-btn" onclick="window.location.href='index.html'">Home</button>
+      <button class="header-btn" onclick="window.location.href='account.html'">Account</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="notice-section">
+      <div class="notice-box" onmouseover="pauseScroll()" onmouseout="startScroll()">
+        <p id="notice-text">
+          Welcome to Gyanoday Vidyalaya! <br> 
+          <strong>Notice:</strong> Annual Sports Day will be held on December 15th, 2024. <br>
+          Please submit your participation forms by December 5th. <br>
+          Good luck to all participants!
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="notice.js"></script>
+</body>
+</html>
